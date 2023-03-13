@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 4 chữ số abcd
+        let n = +prompt("nhập vào số có 4 chữ số")
+        console.log("số ban đầu là " + n);
+        //n = abcd
+        let a = parseInt(n / 1000);
+        n %= 1000; //n = bcd
+        console.log(n);
+        let b = parseInt(n / 100)
+        n %= 100 // n = cd
+        let c = parseInt(n / 10)
+        let d = n % 10
+        let reverseOfN = d * 1000 + c * 100 + b * 10 + a //dcba
+        console.log("Số đảo ngược là:" + reverseOfN);
+    </script>
+</body>
+
+</html>
